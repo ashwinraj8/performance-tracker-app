@@ -1,0 +1,49 @@
+$primary-color: #007bff; // Primary color for headings
+$text-color: #333; // Text color
+$list-background: #f8f9fa; // Background color for list items
+$list-padding: 10px; // Padding for list items
+$border-radius: 5px; // Border radius for list items
+$hover-color: lighten($primary-color, 20%); // Hover color for list items
+
+// Container for the Companies component
+.companies {
+    h1 {
+        color: $primary-color;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: $primary-color; // Same primary color for consistency
+        font-size: 1.6rem; // Font size for the heading
+        text-align: center; // Center alignment
+        margin: 20px 0; // Margin for spacing above and below
+        position: relative; // For positioning the tooltip icon
+        display: flex; // Use flex to align items in a row
+        align-items: center; // Center items vertically
+        justify-content: center; // Center items horizontally
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            background-color: $list-background;
+            padding: $list-padding;
+            margin: 10px 0;
+            border-radius: $border-radius;
+            transition: background-color 0.3s;
+            cursor: pointer;
+
+            strong {
+                color: $primary-color;
+            }
+
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+}

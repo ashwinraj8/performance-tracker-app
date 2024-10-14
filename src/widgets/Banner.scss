@@ -1,0 +1,14 @@
+.banner {
+    background-color: #e9f5ff; // Light blue background for visibility
+    border: 1px solid #4a90e2; // Border color matching primary color
+    color: #333; // Text color
+    padding: 10px; // Padding for spacing
+    border-radius: 5px; // Rounded corners
+    margin: 15px auto; // Center the banner with auto margins
+    font-size: 1rem; // Font size
+    text-align: center; // Center text
+
+    // Set a maximum width and width
+    max-width: 600px; // Set a max width for the banner
+    width: 90%; // Adjust width to be responsive
+}
